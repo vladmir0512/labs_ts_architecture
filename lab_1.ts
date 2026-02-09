@@ -21,7 +21,6 @@ function totalPaid(items: [string, number, boolean][]) : number{
             total = total + +item[1]
         }
     }
-    console.log(total)
 
     return total;
 }
