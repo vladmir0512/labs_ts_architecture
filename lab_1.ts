@@ -17,7 +17,9 @@ let total: number = 0;
 function totalPaid(items: [string, number, boolean][]) : number{
   
     for (const item of items){
-        total = total + +item[1]
+        if (item[1]) {
+            total = total + +item[1]
+        }
     }
     console.log(total)
 
